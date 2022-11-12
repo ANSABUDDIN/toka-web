@@ -2,6 +2,10 @@ import React from 'react'
 import { FaEthereum } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 const Sidebar = () => {
+
+    const path = window.location.pathname;
+    console.log(path);
+
     return (
         <>
             <div className=" col-lg-3 col-12">
@@ -25,14 +29,18 @@ const Sidebar = () => {
                         </div>
                     </div>
                     <div className='mt-4 mx-2'>
-                        <div className="tabs tabs-active">
-                            <Link to="/Dashboard" > Dashboard </Link>
-                        </div>
-                        <div className="tabs">
-                            <Link to="/Datatable" >
-                            Datatable
-                            </Link>
-                        </div>
+                        <Link to="/Dashboard" >
+                            <div className={path == "/Dashboard" ? "tabs tabs-active" : "tabs"} >
+                                Dashboard
+                            </div>
+                        </Link>
+                        <Link to="/Datatable" >
+                            <div className={path == "/Datatable" ? "tabs tabs-active" : "tabs"}>
+
+                                Datatable
+
+                            </div>
+                        </Link>
                         {/* <button className="btn-global-1  fs-7 mt-lg-0 mt-2">
                   Logout
                 </button> */}
