@@ -26,12 +26,12 @@ export default function MyTable() {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell className="text-color">Dessert (100g serving)</TableCell>
-            <TableCell className="text-color" align="center">Calories</TableCell>
-            <TableCell className="text-color" align="center">Fat&nbsp;(g)</TableCell>
-            <TableCell className="text-color" align="center">Carbs&nbsp;(g)</TableCell>
-            <TableCell className="text-color" align="center">Protein&nbsp;(g)</TableCell>
-            <TableCell className="text-color" align="center">Button</TableCell>
+            <TableCell className="text-pink fw-bold">Dessert (100g serving)</TableCell>
+            <TableCell className="text-pink fw-bold" align="center">Calories</TableCell>
+            <TableCell className="text-pink fw-bold" align="center">Fat&nbsp;(g)</TableCell>
+            <TableCell className="text-pink fw-bold" align="center">Carbs&nbsp;(g)</TableCell>
+            <TableCell className="text-pink fw-bold" align="center">Protein&nbsp;(g)</TableCell>
+            <TableCell className="text-pink fw-bold" align="center">Button</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -40,14 +40,14 @@ export default function MyTable() {
               key={row.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell className="text-color" component="th" scope="row">
+              <TableCell className="text-light fw-500" component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell className="text-color" align="center">{row.calories}</TableCell>
-              <TableCell className="text-color" align="center">{row.fat}</TableCell>
-              <TableCell className="text-color" align="center">{row.carbs}</TableCell>
-              <TableCell className="text-color" align="center">{row.protein}</TableCell>
-              <TableCell className="text-color" align="center"><Link to="/Dashboard"><button className='btn-table'>Click</button></Link></TableCell>
+              <TableCell className="text-light fw-500" align="center">{row.calories}</TableCell>
+              <TableCell className="text-light fw-500" align="center">{row.fat}</TableCell>
+              <TableCell className="text-light fw-500" align="center">{row.carbs}</TableCell>
+              <TableCell className="text-light fw-500" align="center">{row.protein}</TableCell>
+              <TableCell className="text-light fw-500" align="center"><Link to="/Dashboard"><button className='btn-table'>Click</button></Link></TableCell>
             </TableRow>
           ))}
         </TableBody>

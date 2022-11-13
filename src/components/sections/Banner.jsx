@@ -6,7 +6,7 @@ const Banner = () => {
   const {t} = useTranslation();
     return (
         <>
-            <section className='banner'>
+            <section className='banner pt-100'>
                 <div className="container">
                     <div className="row align-items-center">
                         {/* text-lg-start text-center */}

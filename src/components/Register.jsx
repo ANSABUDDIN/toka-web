@@ -8,7 +8,7 @@ const Register = () => {
   return (
     <>
     <Header />
-     <section className='banner my-height'>
+     <section className='banner my-height pt-100'>
                 <div className="container">
                     <div className="row align-items-center">
 
