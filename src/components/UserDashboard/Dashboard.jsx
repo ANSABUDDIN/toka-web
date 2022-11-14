@@ -73,7 +73,7 @@ const Dashboard = () => {
           <div className="w-80">
             <div className='d-flex dashheader justify-content-between align-items-center'>
               <div >
-                <div onKeyPress={}>
+                <div >
  
                   <BiFullscreen className='fs-4 pointer d-lg-flex d-none ' />
                 </div>
