@@ -1,7 +1,8 @@
-import React from 'react'
+import React , {useCallback} from 'react'
 import { AiOutlineMail, AiOutlineSetting } from 'react-icons/ai'
 import { MdNotificationsNone } from 'react-icons/md'
 import { BiFullscreen, BiMenu, BiSearch } from 'react-icons/bi'
+import { FullScreen, useFullScreenHandle } from "react-full-screen";
 const DashHeader = () => {
     return (
         <div className='d-flex dashheader justify-content-between align-items-center'>

@@ -712,7 +712,7 @@ body {
 }
 
 .w-20 {
-  width: 20%;
+  width: 18%;
 }
 
 .w-80 {
@@ -767,10 +767,37 @@ body {
   align-items: center;
   padding: 10px 20px;
   gap: 10%;
+  font-size: 13px;
   color: white;
   font-weight: 500;
   border-radius: 10px;
   margin: 10px 0px;
+}
+
+.MuiTablePagination-displayedRows {
+  color: white !important;
+}
+
+/* .css-f3jnds-MuiDataGrid-columnHeaders {
+  border-bottom: 0px !important;
+}
+.MuiDataGrid-row{
+  border-bottom: 0px !important;
+
+} */
+
+
+.MuiSvgIcon-root {
+  color: white !important;
+}
+
+.css-1jbbcbn-MuiDataGrid-columnHeaderTitle {
+  color: var(--pink--) !important;
+  font-weight: 600 !important;
+}
+
+.MuiDataGrid-cellContent {
+  color: white !important;
 }
 
 .tabs a {
@@ -891,20 +918,20 @@ body {
     width: 100%;
     z-index: 9999999999;
 
-    top:10% ;
+    top: 10%;
     transition: all .5s;
     /* top; */
   }
 
   .close {
 
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 0 0, 0 97%, 0 100%);
     transition: all .5s;
     z-index: 9999999999;
-    top:10% ;
+    top: 10%;
     position: absolute;
     width: 100%;
-   
+
   }
 
   .floating {
